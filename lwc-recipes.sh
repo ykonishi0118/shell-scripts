@@ -17,7 +17,7 @@ echo "### Assign permset"
 sfdx force:user:permset:assign -n recipes -u lwc-recipes
 
 echo "### Import data"
-sfdx force:data:tree:import --plan ./data/data-plan.json
+sfdx force:data:tree:import --plan ./data/data-plan.json -u lwc-recipes
 
 echo "### Open org"
 sfdx force:org:open -u lwc-recipes
